@@ -1,0 +1,98 @@
+<html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial</title>
+    <link rel="stylesheet" href="./estilos.css">
+    <script src="./Script.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <h1>LABO III - RPP - VALENTIN FERRERO</h1>
+    </header>
+    <section id="seccionAbm">
+        <form id="formAbm">
+            <fieldset id="fieldCampos">
+                <legend id="legendAbm">Formulario ABM</legend>
+                <p>
+                <label for="txtId" id="lblId">Id:</label>
+                <input type="text" id="txtId" name="id" value="" disabled>
+                </p>
+                <p>
+                <label for="txtNombre" id="lblNombre">Nombre:</label>
+                <input type="text" id="txtNombre" name="nombre" value="" placeholder="Nombre" required>
+                </p>
+                <p>
+                <label for="txtApellido" id="lblApellido">Apellido:</label>
+                <input type="text" id="txtApellido" name="apellido" value="" placeholder="Apellido" required>
+                </p> 
+                <p>
+                <label for="txtEdad" id="lblEdad">Edad:</label>
+                <input type="number" id="txtEdad" name="edad" value="" min="1" placeholder="Edad" required>
+                </p>
+                <p>
+                    <label for="slcTipo" id="lblTipo">Tipo:</label>
+                    <select id="slcTipo" class="tipoPersona" name="tipoPersona"  class="field" required >
+                        <option value="" disabled selected hidden>Seleccione un tipo</option>
+                        <option value="Heroe">Heroe</option>
+                        <option value="Villano">Villano</option>
+                    </select>
+                </p>
+                <div id="fieldHeroe" hidden>
+                    <p>
+                        <label for="txtAlterEgo" id="lblAlterEgo">Alter Ego:</label>
+                        <input id="txtAlterEgo" type="text" name="txtAlterEgo" placeholder="Alter ego" class="field" >
+                    </p>
+                    <p>
+                        <label for="txtCiudad" id="lblCiudad">Ciudad:</label>
+                        <input id="txtCiudad" type="text" name="txtCiudad" placeholder="Ciudad" class="field" >
+                    </p>
+                    <p>
+                        <label for="txtPublicado" id="lblPublicado">Publicado:</label>
+                        <input id="txtPublicado" type="number" name="txtPublicado" min="1940" placeholder="Publicado" class="field" >
+                    </p>
+                </div>
+                <div id="fieldVillano" hidden>
+                    <p>
+                        <label for="txtEnemigo" id="lblEnemigo">Enemigo:</label>
+                        <input id="txtEnemigo" type="text" name="txtEnemigo" placeholder="Enemigo" class="field" >
+                    </p>
+                    <p>
+                        <label for="txtRobos" id="lblRobos">Robos:</label>
+                        <input id="txtRobos" type="number" name="txtRobos" min="1" placeholder="Robos" class="field" >
+                    </p>
+                    <p>
+                        <label for="txtAsesinatos" id="lblAsesinatos">Asesinatos:</label>
+                        <input id="txtAsesinatos" type="number" name="txtAsesinatos" min="1" placeholder="Asesinatos" class="field" >
+                    </p>
+                </div>
+            </fieldset>
+            <p id="botones">
+                <input type="submit" id="btnGuardar" value="Guardar" class="boton" !disabled>
+                <input type="button" id="btnModificar" value="Modificar" class="boton" disabled>
+                <input type= "button" id="btnEliminar" value="Eliminar" class="boton" disabled>
+            </p>
+        </form>
+    </section>
+    <section id="seccionDatos">
+        <p>
+            <label for="filtroTipo" id="lblTipoFiltro">Filtrar por:</label>
+            <select id="filtroTipo" class="tipoPersonaFiltro" name="tipoPersonaFiltro"  class="field" required >
+                <option value="Todos" selected>Todos</option>
+                <option value="Heroe">Heroe</option>
+                <option value="Villano">Villano</option>
+            </select>
+        </p>
+        <div id="divEdadPromedio">
+            <label for="txtEdadPromedio" id="lblEdadPromedio">Edad Promedio:</label>
+            <input type="number" name="txtEdadPromedio" id="txtEdadPromedio" placeholder="Sin calcular" class="field" disabled>
+            <input type= "button" id="btnCalcular" value="Calcular" class="boton">
+        </div>
+        <section id="seccionCheckBox">
+        </section>
+        <section id="seccionTable">
+        </section>
+    </section>
+</body>
+</html></html>

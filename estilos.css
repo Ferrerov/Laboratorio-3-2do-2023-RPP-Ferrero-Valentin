@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#seccionForm {
+    background-color: #444;
+    padding: 20px;
+    margin: 20px auto;
+    width: 50%;
+    border-radius: 5px;
+}
+
+legend {
+    font-size: 18px;
+    color: #fff;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select
+{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    color: #fff;
+    background-color: #555;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    transition: .4s;
+}
+
+input[type="text"]::placeholder,
+input[type="number"]::placeholder
+{
+    color: #ccc;
+}
+input[type="text"]:hover,
+input[type="number"]:hover,
+select:hover
+{
+    box-shadow: 0 0 0 .15vw rgba(135, 207, 235, 0.186);
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus
+{
+    box-shadow: 0 0 0 .15vw rgb(175, 175, 175);
+}
+
+.boton {
+    background-color: #686868;
+    color: #fff;
+    padding: 8px 26px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#btnGuardar:not([disabled]){
+    background-color: #007bff;
+    margin-left: 10px;
+}
+
+#btnModificar:not([disabled]){
+    background-color: #28803b;
+    margin-left: 10px;
+}
+
+#btnEliminar:not([disabled]){
+    background-color: #dc3545;
+    margin-left: 10px;
+}
+
+#btnCalcular:not([disabled]){
+    background-color: #007bff;
+    margin-left: 10px;
+}
+
+#botones {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#fieldAereo,
+#fieldTerrestre {
+    display: none;
+}
+
+section{
+    margin: 5% auto;
+    margin-bottom: 5;
+    margin-top: 5;
+    width: 90%;
+    background-color: #444;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#seccionTable table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#seccionTable th, #seccionTable td {
+    border: none;
+    padding: 10px;
+    text-align: center;
+}
+
+#seccionTable thead {
+    margin: 14% auto;
+    width: 90%;
+    border-collapse: collapse;
+    background-color: rgb(51, 51, 51);
+    border-radius: 10%;
+    padding: 20px;
+    color: #fff;
+}
+#seccionTable tr:hover{
+    background-color: rgb(61, 61, 61);
+}
+
+input[type="checkbox"] {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background: #606062;
+}
+
+#seccionCheckBox table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom:5px;
+}
+
+#seccionCheckBox td {
+    padding: 10px;
+    text-align: center;
+}
+
+#divEdadPromedio{
+    background-color: #444;
+    margin: 20px auto;
+    margin-top: 0%;
+    width: 50%;
+    display: inline-block;
+}
+
+#txtEdadPromedio{
+    width: 60%;
+}
+
+
